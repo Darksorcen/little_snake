@@ -31,7 +31,6 @@ class Game:
     def launch_music(self):
         self.music_background.play(-1, 0)
         self.music_background.set_volume(0.7)
-        self.music_background.fadeout((int(self.music_background.get_length())-3)*1000)
         pygame.display.flip()
 
     def menu(self):
