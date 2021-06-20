@@ -25,7 +25,7 @@ class Game:
         if best_score >= self.snake.score:
             self.snake.best_score = best_score
         elif best_score < self.snake.score:
-            with open("score.txt", "w") as file_score:
+            with open("score.txt", "r+") as file_score:
                 file_score.write(str(self.snake.score))
                 self.snake.best_score = self.snake.score
     def launch_music(self):
